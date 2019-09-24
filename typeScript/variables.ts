@@ -1,6 +1,6 @@
 let disabled:boolean = true; //true or false
 console.log(disabled);
-let  firstName: string = "angel";
+let  firstName: string = "gladys";
 console.log(firstName);
 
 //baccting por que sus comillas son al otro lado

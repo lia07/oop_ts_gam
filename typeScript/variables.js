@@ -1,6 +1,6 @@
 var disabled = true; //true or false
 console.log(disabled);
-var firstName = "angel";
+var firstName = "gladys";
 console.log(firstName);
 //baccting por que sus comillas son al otro lado
 var greeting = "hello  " + firstName;
