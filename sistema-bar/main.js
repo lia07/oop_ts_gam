@@ -17,13 +17,11 @@ var BarMan = /** @class */ (function () {
 }());
 exports.BarMan = BarMan;
 var Tragos = /** @class */ (function () {
-    function Tragos() {
-    }
-    Tragos.prototype.constructo = function (nombr, colores, cant) {
+    function Tragos(nombr, colores, cant) {
         this.nombre = nombr;
         this.color = colores;
         this.cantidad = cant;
-    };
+    }
     return Tragos;
 }());
 exports.Tragos = Tragos;
@@ -44,7 +42,11 @@ var bar1 = new Bar("Nueva era", 50);
 var bar2 = new Bar("El patio", 200);
 console.log(bar1);
 console.log(bar2);
-var barMan1 = new BarMan("a", "b");
-var barMan2 = new BarMan("x", "y");
+var barMan1 = new BarMan("Gladys", "Sarzuri");
+var barMan2 = new BarMan("aaa", "bb");
 console.log(barMan1);
 console.log(barMan2);
+var tragos1 = new Tragos("name", "verde", 150);
+var tragos2 = new Tragos("name1", "azul", 80);
+console.log(tragos1);
+console.log(tragos2);

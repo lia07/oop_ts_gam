@@ -21,7 +21,7 @@ export class Tragos{
     color: string;
     cantidad: number;
 
-    constructo(nombr: string, colores:string, cant:number){
+    constructor(nombr: string, colores:string, cant:number){
         this.nombre=nombr;
         this.color=colores;
         this.cantidad=cant;
@@ -42,11 +42,15 @@ export class Tragos{
 // let bar2: Bar = new Bar("El patio", 20);
 let bar1: Bar = new Bar("Nueva era", 50);
 let bar2: Bar = new Bar("El patio", 200);
-
 console.log(bar1);
 console.log(bar2);
 
-let barMan1: BarMan = new BarMan("aaaa", "bbbb");
-let barMan2: BarMan = new BarMan("x", "y");
+let barMan1: BarMan = new BarMan("Gladys", "Sarzuri");
+let barMan2: BarMan = new BarMan("aaa", "bb");
 console.log(barMan1);
 console.log(barMan2);
+
+let tragos1: Tragos = new Tragos("name", "verde", 150);
+let tragos2: Tragos = new Tragos("name1", "azul", 80);
+console.log(tragos1);
+console.log(tragos2);
