@@ -5,6 +5,18 @@ var Bar = /** @class */ (function () {
         this.nombre = nom; //sirve para refenciar a los atributos
         this.capacidad = cap;
     }
+    Bar.prototype.setNombre = function (nom) {
+        this.nombre = nom;
+    };
+    Bar.prototype.getNombre = function () {
+        return this.nombre;
+    };
+    Bar.prototype.setCapacidad = function (cap) {
+        this.capacidad = cap;
+    };
+    Bar.prototype.getCapacidad = function () {
+        return this.capacidad;
+    };
     return Bar;
 }());
 exports.Bar = Bar;
@@ -13,6 +25,18 @@ var BarMan = /** @class */ (function () {
         this.nombre = nomb;
         this.apellido = apellidos;
     }
+    BarMan.prototype.setNombre = function (nomb) {
+        this.nombre = nomb;
+    };
+    BarMan.prototype.getNombre = function () {
+        return this.nombre;
+    };
+    BarMan.prototype.setApellido = function (apellidos) {
+        this.apellido = apellidos;
+    };
+    BarMan.prototype.getApellido = function () {
+        return this.apellido;
+    };
     return BarMan;
 }());
 exports.BarMan = BarMan;
@@ -22,26 +46,35 @@ var Tragos = /** @class */ (function () {
         this.color = colores;
         this.cantidad = cant;
     }
+    Tragos.prototype.setNombre = function (nombr) {
+        this.nombre = nombr;
+    };
+    Tragos.prototype.getNombre = function () {
+        return this.nombre;
+    };
+    Tragos.prototype.setColor = function (colores) {
+        this.color = colores;
+    };
+    Tragos.prototype.getColor = function () {
+        return this.color;
+    };
+    Tragos.prototype.setCantidad = function (cant) {
+        this.cantidad = cant;
+    };
+    Tragos.prototype.getCantidad = function () {
+        return this.cantidad;
+    };
     return Tragos;
 }());
 exports.Tragos = Tragos;
-/**
- * CONCEPTO: Los atributos son las caracteristicas indibiduales
- * que diferencian un objeto de otro y determinan  su apariencia
- * estado u otros cualidades. Los atributos se guardan en variables
- *  denominadasde instancia, y cada objeto particular puede tene
- * valores distintos para estas variables.
- * CONSTRUCTOR:en programacion orientada a objetos (poo), un constructor
- * es una subrutina cuya mision es inicializar en un objeto
- * de una clase con valores predeterminados
-*/
-/************************************************/
-// let bar1: Bar = new Bar("Nueva Era2", 50);
-// let bar2: Bar = new Bar("El patio", 20);
 var bar1 = new Bar("Nueva era", 50);
 var bar2 = new Bar("El patio", 200);
+bar1.setNombre("el pueblito");
 console.log(bar1);
 console.log(bar2);
+//console.log(bar1.nombre); forma incorrecta de pedir un atributo
+//bar1.nombre = "pueblito"; forma incorrecta actualizar un atributo
+console.log(bar1.getNombre());
 var barMan1 = new BarMan("Gladys", "Sarzuri");
 var barMan2 = new BarMan("aaa", "bb");
 console.log(barMan1);
@@ -50,3 +83,4 @@ var tragos1 = new Tragos("name", "verde", 150);
 var tragos2 = new Tragos("name1", "azul", 80);
 console.log(tragos1);
 console.log(tragos2);
+bar1.setCapacidad(40);

@@ -1,50 +1,84 @@
 export class Bar{
-    nombre: string; //atributos
-    capacidad: number;
+   private nombre: string; //atributos
+   private capacidad: number;
 
     constructor(nom: string, cap: number){
         this.nombre= nom; //sirve para refenciar a los atributos
         this.capacidad=cap;
     }
+
+    public setNombre(nom: string):void{
+        this.nombre = nom;
+    }
+    public getNombre(): string{
+       return  this.nombre;
+    }
+    public setCapacidad(cap: number):void{
+        this.capacidad = cap;
+    }
+    public getCapacidad(): number{
+        return this.capacidad;
+    }
 }
 export class BarMan{
-    nombre: string;
-    apellido: string;
+   private nombre: string;
+   private apellido: string;
     
     constructor(nomb: string, apellidos: string){
         this.nombre=nomb;
         this.apellido=apellidos;
     }
+    public setNombre(nomb: nombre):void{
+        this.nombre = nomb;
+    }
+    public getNombre(): string{
+        return this.nombre;
+    }
+    public setApellido(apellidos: nombre):void{
+        this.apellido = apellidos;
+    }
+    public getApellido(): string{
+        return this.apellido;
+    }
 }
 export class Tragos{
-    nombre: string;
-    color: string;
-    cantidad: number;
+    private nombre: string;
+    private color: string;
+    private cantidad: number;
 
     constructor(nombr: string, colores:string, cant:number){
         this.nombre=nombr;
         this.color=colores;
         this.cantidad=cant;
     }
+    public setNombre(nombr: nombre):void{
+        this.nombre = nombr;
+    }
+    public getNombre(): string{
+        return this.nombre;
+    }
+
+    public setColor(colores: color):void{
+        this.color = colores;
+    }
+    public getColor(): string{
+        return this.color;
+    }
+    public setCantidad(cant: cantidad):void{
+        this.cantidad = cant;
+    }
+    public getCantidad(): number{
+        return this.cantidad;
 }
-/** 
- * CONCEPTO: Los atributos son las caracteristicas indibiduales
- * que diferencian un objeto de otro y determinan  su apariencia 
- * estado u otros cualidades. Los atributos se guardan en variables 
- *  denominadasde instancia, y cada objeto particular puede tene
- * valores distintos para estas variables.
- * CONSTRUCTOR:en programacion orientada a objetos (poo), un constructor  
- * es una subrutina cuya mision es inicializar en un objeto
- * de una clase con valores predeterminados
-*/
-/************************************************/
-// let bar1: Bar = new Bar("Nueva Era2", 50);
-// let bar2: Bar = new Bar("El patio", 20);
-let bar1: Bar = new Bar("Nueva era", 50);
-let bar2: Bar = new Bar("El patio", 200);
+
+//let bar1: Bar = new Bar("Nueva era", 50);
+let bar2: Bar = new Bar("El patio", 200); 
+bar1.setNombre("el pueblito");
 console.log(bar1);
 console.log(bar2);
-
+//console.log(bar1.nombre); forma incorrecta de pedir un atributo
+//bar1.nombre = "pueblito"; forma incorrecta actualizar un atributo
+console.log(bar1.getNombre());
 let barMan1: BarMan = new BarMan("Gladys", "Sarzuri");
 let barMan2: BarMan = new BarMan("aaa", "bb");
 console.log(barMan1);
@@ -54,3 +88,5 @@ let tragos1: Tragos = new Tragos("name", "verde", 150);
 let tragos2: Tragos = new Tragos("name1", "azul", 80);
 console.log(tragos1);
 console.log(tragos2);
+bar1.setCapacidad(40);
+
