@@ -87,8 +87,10 @@ let barMan2: BarMan = new BarMan("Julio", "Gomez");
 console.log(barMan1);
 console.log(barMan2);
 
-let tragos1: Tragos = new Tragos("name", "verde", 150);
-let tragos2: Tragos = new Tragos("name1", "azul", 80);
+let tragos1: Tragos = new Tragos("nombreTrago", "verde", 150);
+let tragos2: Tragos = new Tragos("nombreTragos", "azul", 80);
+tragos1.setColor("Amarillo");
+console.log(tragos1.getColor());
 console.log(tragos1);
 console.log(tragos2);
 bar1.setCapacidad(40);
