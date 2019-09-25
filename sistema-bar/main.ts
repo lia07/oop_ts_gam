@@ -28,13 +28,13 @@ export class BarMan{
         this.nombre=nomb;
         this.apellido=apellidos;
     }
-    public setNombre(nomb: nombre):void{
+    public setNombre(nomb: string):void{
         this.nombre = nomb;
     }
     public getNombre(): string{
         return this.nombre;
     }
-    public setApellido(apellidos: nombre):void{
+    public setApellido(apellidos: string):void{
         this.apellido = apellidos;
     }
     public getApellido(): string{
@@ -51,20 +51,20 @@ export class Tragos{
         this.color=colores;
         this.cantidad=cant;
     }
-    public setNombre(nombr: nombre):void{
+    public setNombre(nombr: string):void{
         this.nombre = nombr;
     }
     public getNombre(): string{
         return this.nombre;
     }
 
-    public setColor(colores: color):void{
+    public setColor(colores: string):void{
         this.color = colores;
     }
     public getColor(): string{
         return this.color;
     }
-    public setCantidad(cant: cantidad):void{
+    public setCantidad(cant: string):void{
         this.cantidad = cant;
     }
     public getCantidad(): number{
