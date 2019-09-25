@@ -69,9 +69,10 @@ export class Tragos{
     }
     public getCantidad(): number{
         return this.cantidad;
+    }
 }
 
-//let bar1: Bar = new Bar("Nueva era", 50);
+let bar1: Bar = new Bar("Nueva era", 50);
 let bar2: Bar = new Bar("El patio", 200); 
 bar1.setNombre("el pueblito");
 console.log(bar1);
