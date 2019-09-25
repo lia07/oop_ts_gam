@@ -70,11 +70,13 @@ exports.Tragos = Tragos;
 var bar1 = new Bar("Nueva era", 50);
 var bar2 = new Bar("El patio", 200);
 bar1.setNombre("el pueblito");
+bar1.setCapacidad(85);
 console.log(bar1);
 console.log(bar2);
 //console.log(bar1.nombre); forma incorrecta de pedir un atributo
 //bar1.nombre = "pueblito"; forma incorrecta actualizar un atributo
 console.log(bar1.getNombre());
+console.log(bar1.getCapacidad());
 var barMan1 = new BarMan("Gladys", "Sarzuri");
 var barMan2 = new BarMan("aaa", "bb");
 console.log(barMan1);

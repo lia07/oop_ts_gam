@@ -58,13 +58,13 @@ export class Tragos{
         return this.nombre;
     }
 
-    public setColor(colores: string):void{
+    public setColor(colores: string): void{
         this.color = colores;
     }
     public getColor(): string{
         return this.color;
     }
-    public setCantidad(cant: string):void{
+    public setCantidad(cant: number): void{
         this.cantidad = cant;
     }
     public getCantidad(): number{
@@ -75,11 +75,13 @@ export class Tragos{
 let bar1: Bar = new Bar("Nueva era", 50);
 let bar2: Bar = new Bar("El patio", 200); 
 bar1.setNombre("el pueblito");
+bar1.setCapacidad(85);
 console.log(bar1);
 console.log(bar2);
 //console.log(bar1.nombre); forma incorrecta de pedir un atributo
 //bar1.nombre = "pueblito"; forma incorrecta actualizar un atributo
 console.log(bar1.getNombre());
+console.log(bar1.getCapacidad());
 let barMan1: BarMan = new BarMan("Gladys", "Sarzuri");
 let barMan2: BarMan = new BarMan("aaa", "bb");
 console.log(barMan1);
