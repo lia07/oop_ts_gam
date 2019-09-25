@@ -83,7 +83,7 @@ console.log(bar2);
 console.log(bar1.getNombre());
 console.log(bar1.getCapacidad());
 let barMan1: BarMan = new BarMan("Gladys", "Sarzuri");
-let barMan2: BarMan = new BarMan("aaa", "bb");
+let barMan2: BarMan = new BarMan("Julio", "Gomez");
 console.log(barMan1);
 console.log(barMan2);
 

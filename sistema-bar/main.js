@@ -78,7 +78,7 @@ console.log(bar2);
 console.log(bar1.getNombre());
 console.log(bar1.getCapacidad());
 var barMan1 = new BarMan("Gladys", "Sarzuri");
-var barMan2 = new BarMan("aaa", "bb");
+var barMan2 = new BarMan("Julio", "Gomez");
 console.log(barMan1);
 console.log(barMan2);
 var tragos1 = new Tragos("name", "verde", 150);
