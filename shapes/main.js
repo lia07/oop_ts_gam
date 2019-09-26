@@ -34,8 +34,9 @@ exports.Rectangulo = Rectangulo;
 /**
  * pruebas
  */
-var posx1 = new Pos(2, 5);
-var posx2 = new Pos(1, 3);
+var posx1 = new Rectangulo(2, 3, 2, 5);
+//let posx2: Rectangulo = new Rectangulo(1,3); 
 posx1.setPosX(2);
+console.log(posx1.getPosX());
 console.log(posx1);
-console.log(posx2);
+//console.log(posx2);

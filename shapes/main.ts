@@ -36,8 +36,9 @@ export class Rectangulo{
  /**
   * pruebas
   */
-let posx1: Rectangulo = new Pos(2, 5);
-let posx2: Rectangulo = new Pos(1,3); 
+let posx1: Rectangulo = new Rectangulo(2,3,2,5);
+//let posx2: Rectangulo = new Rectangulo(1,3); 
 posx1.setPosX(2);
+console.log(posx1.getPosX());
 console.log(posx1);
-console.log(posx2);
+//console.log(posx2);
