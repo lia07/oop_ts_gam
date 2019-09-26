@@ -38,6 +38,18 @@ export class Rectangle{
     public getWidth(): number{
        return  this.width;
     }
+    public desplazar(posX2: number, posY2: number): void{
+        this.posX = posX2;
+        this.posY = posY2;
+    }
+    public getArea(): number{
+        let area: number = this.heigth * this.heigth;
+        return  area;
+     }
+     public getPerimeter(): number{
+        let perimeter : number = 2*this.heigth + 2* this.width;
+        return  perimeter;
+     }
 }
  /**
   * pruebas
@@ -47,7 +59,15 @@ export class Rectangle{
  rectangle1.setHeigth(55);
  rectangle1.setWidth(80);
  console.log(rectangle1);
- let  areaRectangle1: number = rectangle1.getHeigth()*rectangle1.getWidth();
+
+ 
+ rectangle1.desplazar(110,110);
+ console.log(rectangle1);
+ //let  areaRectangle1: number = rectangle1.getHeigth()*rectangle1.getWidth();
+ //console.log(areaRectangle1);
+ let areaRectangle1: number = rectangle1.getArea();
  console.log(areaRectangle1);
- //let rectangle: Rectangle = new Rectangle(2,3,2,5);
- //console.log(rectangle1.getPosX());
+ let perimeterRectangle1:  number = rectangle1.getPerimeter();
+ console.log(perimeterRectangle1);
+
+ 
