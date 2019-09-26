@@ -3,40 +3,49 @@ exports.__esModule = true;
 /**
  * clase
  */
-var Rectangulo = /** @class */ (function () {
-    function Rectangulo(px, py, h, w) {
+var Rectangle = /** @class */ (function () {
+    function Rectangle(px, py, h, w) {
         this.posX = px;
         this.posY = py;
         this.heigth = h;
         this.width = w;
     }
-    Rectangulo.prototype.setPosX = function (px) {
+    Rectangle.prototype.setPosX = function (px) {
         this.posX = px;
     };
-    Rectangulo.prototype.getPosX = function () {
+    Rectangle.prototype.getPosX = function () {
         return this.posX;
     };
-    Rectangulo.prototype.setPosY = function (py) {
+    Rectangle.prototype.setPosY = function (py) {
         this.posY = py;
     };
-    Rectangulo.prototype.getPosY = function () {
+    Rectangle.prototype.getPosY = function () {
         return this.posY;
     };
-    Rectangulo.prototype.setHeigth = function (h) {
+    Rectangle.prototype.setHeigth = function (h) {
         this.heigth = h;
     };
-    Rectangulo.prototype.getHeigth = function () {
+    Rectangle.prototype.getHeigth = function () {
         return this.heigth;
     };
-    return Rectangulo;
+    Rectangle.prototype.setWidth = function (w) {
+        this.width = w;
+    };
+    Rectangle.prototype.getWidth = function () {
+        return this.width;
+    };
+    return Rectangle;
 }());
-exports.Rectangulo = Rectangulo;
+exports.Rectangle = Rectangle;
 /**
  * pruebas
  */
-var posx1 = new Rectangulo(2, 3, 2, 5);
-//let posx2: Rectangulo = new Rectangulo(1,3); 
-posx1.setPosX(2);
-console.log(posx1.getPosX());
-console.log(posx1);
-//console.log(posx2);
+var rectangle1 = new Rectangle(2, 3, 1, 4);
+console.log(rectangle1);
+rectangle1.setHeigth(55);
+rectangle1.setWidth(80);
+console.log(rectangle1);
+var areaRectangle1 = rectangle1.getHeigth() * rectangle1.getWidth();
+console.log(areaRectangle1);
+//let rectangle: Rectangle = new Rectangle(2,3,2,5);
+//console.log(rectangle1.getPosX());

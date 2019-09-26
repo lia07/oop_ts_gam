@@ -1,7 +1,7 @@
 /**
  * clase
  */
-export class Rectangulo{
+export class Rectangle{
     private posX: number;
     private posY: number;
     private heigth: number;
@@ -32,13 +32,22 @@ export class Rectangulo{
     public getHeigth(): number{
        return  this.heigth;
     }
+    public setWidth( w: number):void{
+        this.width = w;
+    }
+    public getWidth(): number{
+       return  this.width;
+    }
 }
  /**
   * pruebas
   */
-let posx1: Rectangulo = new Rectangulo(2,3,2,5);
-//let posx2: Rectangulo = new Rectangulo(1,3); 
-posx1.setPosX(2);
-console.log(posx1.getPosX());
-console.log(posx1);
-//console.log(posx2);
+ let rectangle1: Rectangle = new Rectangle(2,3,1,4);
+ console.log(rectangle1);
+ rectangle1.setHeigth(55);
+ rectangle1.setWidth(80);
+ console.log(rectangle1);
+ let  areaRectangle1: number = rectangle1.getHeigth()*rectangle1.getWidth();
+ console.log(areaRectangle1);
+ //let rectangle: Rectangle = new Rectangle(2,3,2,5);
+ //console.log(rectangle1.getPosX());
