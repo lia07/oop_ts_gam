@@ -12,6 +12,13 @@
  * direcciones, al mismo tiempo una direccion  esta compuesta por la siguiente
  * informacion: ciudad, barrio, calle.
  * Para los profesores en particular se necesita guardar su profesion.
+ * 
+ * Crear 5 instancias de la clase curso.
+ * Crear 10instancias  de la clase estudiante
+ * Crear 2 instancias de la clase Docente.
+ * Crear 12 instancias  de compraCurso.
+ * Hacer correr y verificar el correcto funcionamiento de las clases implementadas.
+ * Subir  su repositorio.
  */
 
  export class Curso{
@@ -20,9 +27,10 @@
     private precio: number; 
     private profesor: Profesor;
 
-    constructor(nomC: string, desc: string, precio: number, profe: Profesor){
+    constructor(nomC: string, desc: string, pre: number,  profe: Profesor){
          this.nombre = nomC;
          this.descripcion = desc; 
+         this.precio = pre;
          this.profesor= profe;
     }
 }
@@ -66,6 +74,18 @@ export class Estudiante{
         this.correo = corre;
         this.direccion = direcE; 
    }
+    public setNombre(nomE: string):void{
+    this.nombre = nomE;
+   }
+   public getNombre(): string{
+        return this.nombre;
+    }
+   public setApellido(ape: string):void{
+        this.apellido = ape;
+    }
+   public getApellido(): string{
+    return this.apellido;
+   } 
 }
 
 export class Direccion{
@@ -82,7 +102,58 @@ export class Direccion{
 /**
  * Prueba
  */
-let direcion1: Direccion =new Direccion("LPZ", "NOSE", "16 DE JULIO")
-let dir: Direccion[] = [direcion1];
-let est1: Estudiante = new Estudiante("Gladys","Sarzuri", "sarzurisilvestre@gmail.com", dir);
+//Crear 10instancias  de la clase estudiante
+let direccion1: Direccion =new Direccion("LPZ", "NOSE", "16 DE JULIO");
+let dir: Direccion[] = [direccion1];
+let est1: Estudiante = new Estudiante("Gladys","Sarzuri", "sarzuri@gmail.com", dir);
+let est2: Estudiante = new Estudiante("Erlinda","Chambi", "erlinda@gmail.com", dir);
+let est3: Estudiante = new Estudiante("Gio","Brañez", "giob@gmail.com", dir);
+let est4: Estudiante = new Estudiante("Miguel","Lopez", "miguell@gmail.com", dir);
+let est5: Estudiante = new Estudiante("Eduardo","Gomez", "gomez@gmail.com", dir);
+let est6: Estudiante = new Estudiante("Luis","Jadin", "lui@gmail.com", dir);
+let est7: Estudiante = new Estudiante("Aleyda","Choque", "choque@gmail.com", dir);
+let est8: Estudiante = new Estudiante("Ariel","Claros", "ariel@gmail.com", dir);
+let est9: Estudiante = new Estudiante("Brian","Padilla", "briani@gmail.com", dir);
+let est10: Estudiante = new Estudiante("Henry","Zerda", "henry@gmail.com", dir);
 console.log(est1);
+console.log(est2);
+console.log(est3);
+console.log(est4);
+console.log(est5);
+//Crear 2 instancias de la clase Docente.
+let direccion2: Direccion =new Direccion("LPZ", "NOSE", "16 DE JULIO");
+let dir2: Direccion[] = [direccion2];
+let direccion3: Direccion =new Direccion("CBB", "tunari", "15 DE Junio");
+let dir3: Direccion[] = [direccion3];
+let prof1: Profesor = new Profesor("Grover","Plaza", "grover@gmail.com", "Ingeniero", dir2);
+let prof2: Profesor = new Profesor("Angel","Antezana", "angel@gmail.com", "Ingeniero", dir3);
+let prof3: Profesor = new Profesor("Ricardo","Valencia", "ricardo@gmail.com", "Ingeniero", dir3);
+let prof4: Profesor = new Profesor("Franz","Lopez", "franz@gmail.com", "Ingeniero", dir3);
+let prof5: Profesor = new Profesor("Angel2","Antezana2", "angel2@gmail.com", "Ingeniero", dir3);
+console.log(prof1);
+console.log(prof2);
+console.log(prof3);
+console.log(prof4);
+console.log(prof5);
+
+//Crear 5 instancias de la clase curso.
+let curso1: Curso= new Curso("javaScript","fundamentos de js", 200, prof2);
+let curso2: Curso= new Curso("angular", "angular basico", 400, prof5);
+let curso3: Curso= new Curso("python","Fundamentos de python", 300, prof4);
+let curso4: Curso= new Curso("django","Fundamentos de django", 300, prof3);
+let curso5: Curso= new Curso("vuejs","Fundamentos de vuejs", 300, prof1);
+
+
+//Crear 12 instancias  de compraCurso.
+let comprarCurso1: CompraCurso = new CompraCurso(curso1,est1,"fecha");
+let comprarCurso2: CompraCurso = new CompraCurso(curso2,est2,"fecha");
+let comprarCurso3: CompraCurso = new CompraCurso(curso3,est3,"fecha");
+let comprarCurso4: CompraCurso = new CompraCurso(curso4,est4,"fecha");
+let comprarCurso5: CompraCurso = new CompraCurso(curso5,est5,"fecha");
+let comprarCurso6: CompraCurso = new CompraCurso(curso1,est6,"fecha");
+let comprarCurso7: CompraCurso = new CompraCurso(curso2,est7,"fecha");
+let comprarCurso8: CompraCurso = new CompraCurso(curso3,est8,"fecha");
+let comprarCurso9: CompraCurso = new CompraCurso(curso4,est9,"fecha");
+let comprarCurso10: CompraCurso = new CompraCurso(curso5,est10,"fecha");
+let comprarCurso11: CompraCurso = new CompraCurso(curso1,est1,"fecha");
+let comprarCurso12: CompraCurso = new CompraCurso(curso2,est2,"fecha");
