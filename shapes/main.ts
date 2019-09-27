@@ -50,6 +50,7 @@ export class Rectangle{
         let perimeter : number = 2*this.heigth + 2* this.width;
         return  perimeter;
      }
+   
 }
  /**
   * pruebas
@@ -60,7 +61,6 @@ export class Rectangle{
  rectangle1.setWidth(80);
  console.log(rectangle1);
 
- 
  rectangle1.desplazar(110,110);
  console.log(rectangle1);
  //let  areaRectangle1: number = rectangle1.getHeigth()*rectangle1.getWidth();
