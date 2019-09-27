@@ -86,8 +86,8 @@ export class Estudiante{
    public getApellido(): string{
     return this.apellido;
    } 
+   public
 }
-
 export class Direccion{
     private ciudad: string;
     private barrio: string;
@@ -142,18 +142,24 @@ let curso2: Curso= new Curso("angular", "angular basico", 400, prof5);
 let curso3: Curso= new Curso("python","Fundamentos de python", 300, prof4);
 let curso4: Curso= new Curso("django","Fundamentos de django", 300, prof3);
 let curso5: Curso= new Curso("vuejs","Fundamentos de vuejs", 300, prof1);
-
+console.log(curso1);
+console.log(curso2);
+console.log(curso3);
+console.log(curso4);
+console.log(curso5);
 
 //Crear 12 instancias  de compraCurso.
-let comprarCurso1: CompraCurso = new CompraCurso(curso1,est1,"fecha");
-let comprarCurso2: CompraCurso = new CompraCurso(curso2,est2,"fecha");
-let comprarCurso3: CompraCurso = new CompraCurso(curso3,est3,"fecha");
-let comprarCurso4: CompraCurso = new CompraCurso(curso4,est4,"fecha");
-let comprarCurso5: CompraCurso = new CompraCurso(curso5,est5,"fecha");
-let comprarCurso6: CompraCurso = new CompraCurso(curso1,est6,"fecha");
+let comprarCurso1: CompraCurso = new CompraCurso(curso1,est1,"27 de septiembre de 2019");
+let comprarCurso2: CompraCurso = new CompraCurso(curso2,est2,"7 de septiembre de 2019");
+let comprarCurso3: CompraCurso = new CompraCurso(curso3,est3,"8 de septiembre de 2019");
+let comprarCurso4: CompraCurso = new CompraCurso(curso4,est4,"9 de septiembre de 2019");
+let comprarCurso5: CompraCurso = new CompraCurso(curso5,est5,"10 de septiembre de 2019");
+let comprarCurso6: CompraCurso = new CompraCurso(curso1,est6,"11 de septiembre de 2019");
 let comprarCurso7: CompraCurso = new CompraCurso(curso2,est7,"fecha");
 let comprarCurso8: CompraCurso = new CompraCurso(curso3,est8,"fecha");
 let comprarCurso9: CompraCurso = new CompraCurso(curso4,est9,"fecha");
 let comprarCurso10: CompraCurso = new CompraCurso(curso5,est10,"fecha");
 let comprarCurso11: CompraCurso = new CompraCurso(curso1,est1,"fecha");
 let comprarCurso12: CompraCurso = new CompraCurso(curso2,est2,"fecha");
+console.log(comprarCurso1);
+console.log(comprarCurso2);
