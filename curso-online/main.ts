@@ -29,13 +29,11 @@ export class CompraCurso{
     private curso: Curso; //atributos
     private estudiante: Estudiante;
     private fecha: string;
-    private direccion: Direccion[];
 
-    constructor(cu: Curso, est: string, fe: string, dir: Direccion){
+    constructor(cu: Curso, est: string, fe: string){
         this.curso = cu;
-        // this.estudiante = est; 
+        //this.estudiante = est; 
         this.fecha= fe;
-        //this.direccion = dir;
    }
 }
  

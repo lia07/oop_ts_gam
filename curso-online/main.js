@@ -24,11 +24,10 @@ var Curso = /** @class */ (function () {
 }());
 exports.Curso = Curso;
 var CompraCurso = /** @class */ (function () {
-    function CompraCurso(cu, est, fe, dir) {
+    function CompraCurso(cu, est, fe) {
         this.curso = cu;
-        // this.estudiante = est; 
+        //this.estudiante = est; 
         this.fecha = fe;
-        //this.direccion = dir;
     }
     return CompraCurso;
 }());
