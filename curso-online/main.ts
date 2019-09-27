@@ -163,3 +163,4 @@ let comprarCurso11: CompraCurso = new CompraCurso(curso1,est1,"fecha");
 let comprarCurso12: CompraCurso = new CompraCurso(curso2,est2,"fecha");
 console.log(comprarCurso1);
 console.log(comprarCurso2);
+console.log(comprarCurso3);
