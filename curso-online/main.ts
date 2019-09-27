@@ -35,7 +35,7 @@ export class CompraCurso{
         this.curso = cu;
         // this.estudiante = est; 
         this.fecha= fe;
-        // this.direccion = dir;
+        //this.direccion = dir;
    }
 }
  
@@ -46,12 +46,12 @@ export class Profesor{
     private profesion: string; 
     private direccion: Direccion[];
 
-    constructor(nomP: string, ap: string, corr: string, prof: String, direcP: Direccion[]){
+    constructor(nomP: string, ap: string, corr: string, pro: String, direcP: Direccion[]){
         this.nombre = nomP;
         this.apellido = ap;
         this.correo = corr;
-        // this.profesion = prof;
-        // this.direccion = dirP; 
+        //this.profesion = pro;
+        this.direccion = direcP; 
    }
 }
 

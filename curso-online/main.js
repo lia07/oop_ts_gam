@@ -28,18 +28,18 @@ var CompraCurso = /** @class */ (function () {
         this.curso = cu;
         // this.estudiante = est; 
         this.fecha = fe;
-        // this.direccion = dir;
+        //this.direccion = dir;
     }
     return CompraCurso;
 }());
 exports.CompraCurso = CompraCurso;
 var Profesor = /** @class */ (function () {
-    function Profesor(nomP, ap, corr, prof, direcP) {
+    function Profesor(nomP, ap, corr, pro, direcP) {
         this.nombre = nomP;
         this.apellido = ap;
         this.correo = corr;
-        // this.profesion = prof;
-        // this.direccion = dirP; 
+        //this.profesion = pro;
+        this.direccion = direcP;
     }
     return Profesor;
 }());
