@@ -18,12 +18,13 @@
     private nombre: string; //atributos
     private descripcion: string;
     private precio: number; 
+    private profesor: Profesor;
 
-    constructor(nomC: string, desc: string, precio: number){
+    constructor(nomC: string, desc: string, precio: number, profe: Profesor){
          this.nombre = nomC;
          this.descripcion = desc; 
+         this.profesor= profe;
     }
-   
 }
 export class CompraCurso{
     private curso: Curso; //atributos
@@ -81,3 +82,7 @@ export class Direccion{
 /**
  * Prueba
  */
+let direcion1: Direccion =new Direccion("LPZ", "NOSE", "16 DE JULIO")
+let dir: Direccion[] = [direcion1];
+let est1: Estudiante = new Estudiante("Gladys","Sarzuri", "sarzurisilvestre@gmail.com", dir);
+console.log(est1);

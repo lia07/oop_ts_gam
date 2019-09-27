@@ -16,9 +16,10 @@
  */
 exports.__esModule = true;
 var Curso = /** @class */ (function () {
-    function Curso(nomC, desc, precio) {
+    function Curso(nomC, desc, precio, profe) {
         this.nombre = nomC;
         this.descripcion = desc;
+        this.profesor = profe;
     }
     return Curso;
 }());
@@ -65,3 +66,7 @@ exports.Direccion = Direccion;
 /**
  * Prueba
  */
+var direcion1 = new Direccion("LPZ", "NOSE", "16 DE JULIO");
+var dir = [direcion1];
+var est1 = new Estudiante("Gladys", "Sarzuri", "sarzurisilvestre@gmail.com", dir);
+console.log(est1);
