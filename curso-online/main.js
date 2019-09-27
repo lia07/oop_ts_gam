@@ -26,7 +26,7 @@ exports.Curso = Curso;
 var CompraCurso = /** @class */ (function () {
     function CompraCurso(cu, est, fe) {
         this.curso = cu;
-        //this.estudiante = est; 
+        this.estudiante = est;
         this.fecha = fe;
     }
     return CompraCurso;
@@ -37,7 +37,7 @@ var Profesor = /** @class */ (function () {
         this.nombre = nomP;
         this.apellido = ap;
         this.correo = corr;
-        //this.profesion = pro;
+        this.profesion = pro;
         this.direccion = direcP;
     }
     return Profesor;
@@ -62,3 +62,6 @@ var Direccion = /** @class */ (function () {
     return Direccion;
 }());
 exports.Direccion = Direccion;
+/**
+ * Prueba
+ */
