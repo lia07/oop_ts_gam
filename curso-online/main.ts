@@ -220,5 +220,21 @@ let comprarCurso10: CompraCurso = new CompraCurso(curso5,est10,"fecha");
 let comprarCurso11: CompraCurso = new CompraCurso(curso1,est1,"fecha");
 let comprarCurso12: CompraCurso = new CompraCurso(curso2,est2,"fecha");
 console.log(comprarCurso1, comprarCurso2, comprarCurso3,comprarCurso4, comprarCurso5);
-// console.log(comprarCurso2);
-// console.log(comprarCurso3);
+console.log(comprarCurso6, comprarCurso7, comprarCurso8, comprarCurso9,comprarCurso10,comprarCurso11);
+console.log(comprarCurso12);
+
+//Crear 12 instancias  de compraCurso.
+let comprarCurso13: CompraCurso = new CompraCurso(curso1,est1,"28 de septiembre de 2019");
+let comprarCurso14: CompraCurso = new CompraCurso(curso1,est2,"29 de octubre de 2019");
+let comprarCurso15: CompraCurso = new CompraCurso(curso1,est3,"30 de noviembre de 2019");
+let comprarCurso16: CompraCurso = new CompraCurso(curso1,est4,"31 de diciembre de 2019");
+let comprarCurso17: CompraCurso = new CompraCurso(curso1,est1,"32 de septiembre de 2019");
+let comprarCurso18: CompraCurso = new CompraCurso(curso1,est1,"33 de septiembre de 2019");
+let comprarCurso19: CompraCurso = new CompraCurso(curso1,est1,"34 de septiembre de 2019");
+let comprarCurso20: CompraCurso = new CompraCurso(curso1,est1,"35 de septiembre de 2019");
+let comprarCurso21: CompraCurso = new CompraCurso(curso1,est1,"36 de septiembre de 2019");
+let comprarCurso22: CompraCurso = new CompraCurso(curso1,est1,"37 de septiembre de 2019");
+let comprarCurso23: CompraCurso = new CompraCurso(curso1,est1,"38 de septiembre de 2019");
+let comprarCurso24: CompraCurso = new CompraCurso(curso1,est1,"39 de septiembre de 2019");
+console.log(comprarCurso13,comprarCurso14, comprarCurso15,comprarCurso16, comprarCurso17,comprarCurso18);
+console.log(comprarCurso19,comprarCurso20,comprarCurso21, comprarCurso22,comprarCurso23,comprarCurso24);

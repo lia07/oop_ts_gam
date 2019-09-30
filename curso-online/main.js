@@ -49,6 +49,36 @@ var Profesor = /** @class */ (function () {
         this.profesion = pro;
         this.direccion = direcP;
     }
+    Profesor.prototype.setNombre = function (nomP) {
+        this.nombre = nomP;
+    };
+    Profesor.prototype.getNombre = function () {
+        return this.nombre;
+    };
+    Profesor.prototype.setApellido = function (ap) {
+        this.apellido = ap;
+    };
+    Profesor.prototype.getApellido = function () {
+        return this.apellido;
+    };
+    Profesor.prototype.setCorreo = function (corr) {
+        this.correo = corr;
+    };
+    Profesor.prototype.getCorreo = function () {
+        return this.correo;
+    };
+    Profesor.prototype.setProfesion = function (profe) {
+        this.profesion = profe;
+    };
+    Profesor.prototype.getProfesion = function () {
+        return this.profesion;
+    };
+    Profesor.prototype.setDireccion = function (direcP) {
+        this.direccion = direcP;
+    };
+    Profesor.prototype.getDireccion = function () {
+        return this.direccion;
+    };
     return Profesor;
 }());
 exports.Profesor = Profesor;
@@ -71,6 +101,18 @@ var Estudiante = /** @class */ (function () {
     Estudiante.prototype.getApellido = function () {
         return this.apellido;
     };
+    Estudiante.prototype.setCorreo = function (corre) {
+        this.correo = corre;
+    };
+    Estudiante.prototype.getCorreo = function () {
+        return this.correo;
+    };
+    Estudiante.prototype.setDireccion = function (direcE) {
+        this.direccion = direcE;
+    };
+    Estudiante.prototype.getDireccion = function () {
+        return this.direccion;
+    };
     return Estudiante;
 }());
 exports.Estudiante = Estudiante;
@@ -80,6 +122,24 @@ var Direccion = /** @class */ (function () {
         this.barrio = bar;
         this.calle = call;
     }
+    Direccion.prototype.setCiudad = function (ci) {
+        this.ciudad = ci;
+    };
+    Direccion.prototype.getCiudad = function () {
+        return this.ciudad;
+    };
+    Direccion.prototype.setBarrio = function (ba) {
+        this.barrio = ba;
+    };
+    Direccion.prototype.getBarrio = function () {
+        return this.barrio;
+    };
+    Direccion.prototype.setCalle = function (cll) {
+        this.calle = cll;
+    };
+    Direccion.prototype.getCalle = function () {
+        return this.calle;
+    };
     return Direccion;
 }());
 exports.Direccion = Direccion;
@@ -143,6 +203,21 @@ var comprarCurso9 = new CompraCurso(curso4, est9, "fecha");
 var comprarCurso10 = new CompraCurso(curso5, est10, "fecha");
 var comprarCurso11 = new CompraCurso(curso1, est1, "fecha");
 var comprarCurso12 = new CompraCurso(curso2, est2, "fecha");
-console.log(comprarCurso1);
-console.log(comprarCurso2);
-console.log(comprarCurso3);
+console.log(comprarCurso1, comprarCurso2, comprarCurso3, comprarCurso4, comprarCurso5);
+console.log(comprarCurso6, comprarCurso7, comprarCurso8, comprarCurso9, comprarCurso10, comprarCurso11);
+console.log(comprarCurso12);
+//Crear 12 instancias  de compraCurso.
+var comprarCurso13 = new CompraCurso(curso1, est1, "28 de septiembre de 2019");
+var comprarCurso14 = new CompraCurso(curso1, est1, "29 de octubre de 2019");
+var comprarCurso15 = new CompraCurso(curso1, est1, "30 de noviembre de 2019");
+var comprarCurso16 = new CompraCurso(curso1, est1, "31 de diciembre de 2019");
+var comprarCurso17 = new CompraCurso(curso1, est1, "32 de septiembre de 2019");
+var comprarCurso18 = new CompraCurso(curso1, est1, "33 de septiembre de 2019");
+var comprarCurso19 = new CompraCurso(curso1, est1, "34 de septiembre de 2019");
+var comprarCurso20 = new CompraCurso(curso1, est1, "35 de septiembre de 2019");
+var comprarCurso21 = new CompraCurso(curso1, est1, "36 de septiembre de 2019");
+var comprarCurso22 = new CompraCurso(curso1, est1, "37 de septiembre de 2019");
+var comprarCurso23 = new CompraCurso(curso1, est1, "38 de septiembre de 2019");
+var comprarCurso24 = new CompraCurso(curso1, est1, "39 de septiembre de 2019");
+console.log(comprarCurso13, comprarCurso14, comprarCurso15, comprarCurso16, comprarCurso17, comprarCurso18);
+console.log(comprarCurso19, comprarCurso20, comprarCurso21, comprarCurso22, comprarCurso23, comprarCurso24);
