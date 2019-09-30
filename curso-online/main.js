@@ -79,6 +79,9 @@ var Profesor = /** @class */ (function () {
     Profesor.prototype.getDireccion = function () {
         return this.direccion;
     };
+    Profesor.prototype.setAgregarNuevaDireccion = function (nuevaDireccion) {
+        this.direccion.push(nuevaDireccion);
+    };
     return Profesor;
 }());
 exports.Profesor = Profesor;
@@ -197,12 +200,13 @@ var prof2 = new Profesor("Angel", "Antezana", "angel@gmail.com", "Ingeniero", di
 var prof3 = new Profesor("Ricardo", "Valencia", "ricardo@gmail.com", "Ingeniero", dir3);
 var prof4 = new Profesor("Franz", "Lopez", "franz@gmail.com", "Ingeniero", dir5);
 var prof5 = new Profesor("Angel2", "Antezana2", "angel2@gmail.com", "Ingeniero", dir4);
-console.log(prof1);
+console.log(prof1 + '------------------------------------------------------------');
 console.log(prof2);
 console.log(prof3);
 console.log(prof4);
 console.log(prof5);
 // prof1.s(dir3);
+prof1.setAgregarNuevaDireccion(direccion2);
 //Crear 5 instancias de la clase curso.
 var curso1 = new Curso("javaScript", "fundamentos de js", 200, prof2);
 var curso2 = new Curso("angular", "angular basico", 400, prof5);

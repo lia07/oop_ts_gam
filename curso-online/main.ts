@@ -89,6 +89,9 @@ export class Profesor{
    }
    public getDireccion(): Direccion[]{
     return this.direccion;
+   }
+   public setAgregarNuevaDireccion(nuevaDireccion: Direccion): void{
+    this.direccion.push(nuevaDireccion);
    }  
 }
 export class Estudiante{
@@ -215,12 +218,13 @@ let prof2: Profesor = new Profesor("Angel","Antezana", "angel@gmail.com", "Ingen
 let prof3: Profesor = new Profesor("Ricardo","Valencia", "ricardo@gmail.com", "Ingeniero", dir3);
 let prof4: Profesor = new Profesor("Franz","Lopez", "franz@gmail.com", "Ingeniero", dir5);
 let prof5: Profesor = new Profesor("Angel2","Antezana2", "angel2@gmail.com", "Ingeniero", dir4);
-console.log(prof1);
+console.log(prof1+ '------------------------------------------------------------');
 console.log(prof2);
 console.log(prof3);
 console.log(prof4);
 console.log(prof5);
     // prof1.s(dir3);
+prof1.setAgregarNuevaDireccion(direccion2);
 
 //Crear 5 instancias de la clase curso.
 let curso1: Curso= new Curso("javaScript","fundamentos de js", 200, prof2);
