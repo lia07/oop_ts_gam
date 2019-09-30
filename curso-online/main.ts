@@ -60,10 +60,39 @@ export class Profesor{
         this.profesion = pro;
         this.direccion = direcP; 
    }
+   public setNombre(nomP: string): void{
+    this.nombre = nomP;
+   }
+   public getNombre(): string{
+    return this.nombre;
+   }
+   public setApellido(ap: string): void{
+    this.apellido = ap;
+   }
+   public getApellido(): string{
+    return this.apellido;
+   }
+   public setCorreo(corr: string): void{
+    this.correo = corr;
+   }
+   public getCorreo(): string{
+    return this.correo;
+   }
+   public setProfesion(profe: string): void{
+    this.profesion = profe;
+   }
+   public getProfesion(): string{
+    return this.profesion;
+   }
+   public setDireccion(direcP: Direccion[]): void{
+    this.direccion = direcP;
+   }
+   public getDireccion(): Direccion[]{
+    return this.direccion;
+   }  
 }
-
 export class Estudiante{
-    private nombre: string; //atributos
+    private nombre: string; 
     private apellido: string;
     private correo: string;
     private direccion: Direccion[];
@@ -75,7 +104,7 @@ export class Estudiante{
         this.direccion = direcE; 
    }
     public setNombre(nomE: string):void{
-    this.nombre = nomE;
+        this.nombre = nomE;
    }
    public getNombre(): string{
         return this.nombre;
@@ -86,7 +115,18 @@ export class Estudiante{
    public getApellido(): string{
     return this.apellido;
    } 
-   public
+   public setCorreo(corre: string): void{
+       this.correo=corre;
+   }
+   public getCorreo(): string{
+       return this.correo;
+   }
+    public setDireccion(direcE: Direccion[]): void{
+    this.direccion = direcE;
+   }
+   public getDireccion(): Direccion[]{
+    return this.direccion;
+   }
 }
 export class Direccion{
     private ciudad: string;
@@ -97,6 +137,24 @@ export class Direccion{
         this.ciudad = ci;
         this.barrio = bar;
         this.calle = call;
+   }
+   public setCiudad(ci: string): void{
+    this.ciudad = ci;
+   }
+   public getCiudad(): string{
+    return this.ciudad;
+   }
+   public setBarrio(ba: string): void{
+    this.barrio = ba;
+   }
+   public getBarrio(): string{
+    return this.barrio;
+   }
+   public setCalle(cll: string): void{
+    this.calle = cll;
+   }
+   public getCalle(): string{
+    return this.calle;
    }
 }
 /**
@@ -161,6 +219,6 @@ let comprarCurso9: CompraCurso = new CompraCurso(curso4,est9,"fecha");
 let comprarCurso10: CompraCurso = new CompraCurso(curso5,est10,"fecha");
 let comprarCurso11: CompraCurso = new CompraCurso(curso1,est1,"fecha");
 let comprarCurso12: CompraCurso = new CompraCurso(curso2,est2,"fecha");
-console.log(comprarCurso1);
-console.log(comprarCurso2);
-console.log(comprarCurso3);
+console.log(comprarCurso1, comprarCurso2, comprarCurso3,comprarCurso4, comprarCurso5);
+// console.log(comprarCurso2);
+// console.log(comprarCurso3);
