@@ -107,11 +107,8 @@ var Estudiante = /** @class */ (function () {
     Estudiante.prototype.getCorreo = function () {
         return this.correo;
     };
-    Estudiante.prototype.setDireccion = function (direcE) {
-        this.direccion = direcE;
-    };
-    Estudiante.prototype.getDireccion = function () {
-        return this.direccion;
+    Estudiante.prototype.setAgregarNuevaDireccion = function (nuevaDireccion) {
+        this.direccion.push(nuevaDireccion);
     };
     return Estudiante;
 }());
@@ -143,6 +140,26 @@ var Direccion = /** @class */ (function () {
     return Direccion;
 }());
 exports.Direccion = Direccion;
+var PlataformaEducativa = /** @class */ (function () {
+    function PlataformaEducativa(nompl, list) {
+        this.nombre = nompl;
+        this.lista = list;
+    }
+    PlataformaEducativa.prototype.setNombre = function (nompl) {
+        this.nombre = nompl;
+    };
+    PlataformaEducativa.prototype.getNombre = function () {
+        return this.nombre;
+    };
+    PlataformaEducativa.prototype.setRegistrarVenta = function (compra1) {
+        this.lista.push(compra1);
+    };
+    PlataformaEducativa.prototype.setIngresoPersividos = function (venta1) {
+        this.lista.push(venta1);
+    };
+    return PlataformaEducativa;
+}());
+exports.PlataformaEducativa = PlataformaEducativa;
 /**
  * Prueba
  */
@@ -164,21 +181,28 @@ console.log(est2);
 console.log(est3);
 console.log(est4);
 console.log(est5);
+console.log(est6);
+est1.setAgregarNuevaDireccion(direccion1);
 //Crear 2 instancias de la clase Docente.
 var direccion2 = new Direccion("LPZ", "NOSE", "16 DE JULIO");
 var dir2 = [direccion2];
 var direccion3 = new Direccion("CBB", "tunari", "15 DE Junio");
 var dir3 = [direccion3];
+var direccion4 = new Direccion("SCZ", "3Anillo", "plan 300");
+var dir4 = [direccion4];
+var direccion5 = new Direccion("LPZ", "Zona  sur", "Villa Fatima");
+var dir5 = [direccion5];
 var prof1 = new Profesor("Grover", "Plaza", "grover@gmail.com", "Ingeniero", dir2);
 var prof2 = new Profesor("Angel", "Antezana", "angel@gmail.com", "Ingeniero", dir3);
 var prof3 = new Profesor("Ricardo", "Valencia", "ricardo@gmail.com", "Ingeniero", dir3);
-var prof4 = new Profesor("Franz", "Lopez", "franz@gmail.com", "Ingeniero", dir3);
-var prof5 = new Profesor("Angel2", "Antezana2", "angel2@gmail.com", "Ingeniero", dir3);
+var prof4 = new Profesor("Franz", "Lopez", "franz@gmail.com", "Ingeniero", dir5);
+var prof5 = new Profesor("Angel2", "Antezana2", "angel2@gmail.com", "Ingeniero", dir4);
 console.log(prof1);
 console.log(prof2);
 console.log(prof3);
 console.log(prof4);
 console.log(prof5);
+// prof1.s(dir3);
 //Crear 5 instancias de la clase curso.
 var curso1 = new Curso("javaScript", "fundamentos de js", 200, prof2);
 var curso2 = new Curso("angular", "angular basico", 400, prof5);
@@ -208,16 +232,20 @@ console.log(comprarCurso6, comprarCurso7, comprarCurso8, comprarCurso9, comprarC
 console.log(comprarCurso12);
 //Crear 12 instancias  de compraCurso.
 var comprarCurso13 = new CompraCurso(curso1, est1, "28 de septiembre de 2019");
-var comprarCurso14 = new CompraCurso(curso1, est1, "29 de octubre de 2019");
-var comprarCurso15 = new CompraCurso(curso1, est1, "30 de noviembre de 2019");
-var comprarCurso16 = new CompraCurso(curso1, est1, "31 de diciembre de 2019");
-var comprarCurso17 = new CompraCurso(curso1, est1, "32 de septiembre de 2019");
-var comprarCurso18 = new CompraCurso(curso1, est1, "33 de septiembre de 2019");
-var comprarCurso19 = new CompraCurso(curso1, est1, "34 de septiembre de 2019");
-var comprarCurso20 = new CompraCurso(curso1, est1, "35 de septiembre de 2019");
-var comprarCurso21 = new CompraCurso(curso1, est1, "36 de septiembre de 2019");
-var comprarCurso22 = new CompraCurso(curso1, est1, "37 de septiembre de 2019");
-var comprarCurso23 = new CompraCurso(curso1, est1, "38 de septiembre de 2019");
-var comprarCurso24 = new CompraCurso(curso1, est1, "39 de septiembre de 2019");
+var comprarCurso14 = new CompraCurso(curso1, est2, "29 de octubre de 2019");
+var comprarCurso15 = new CompraCurso(curso1, est3, "30 de noviembre de 2019");
+var comprarCurso16 = new CompraCurso(curso1, est4, "02 de diciembre de 2019");
+var comprarCurso17 = new CompraCurso(curso1, est1, "03 de septiembre de 2019");
+var comprarCurso18 = new CompraCurso(curso1, est1, "04 de septiembre de 2019");
+var comprarCurso19 = new CompraCurso(curso1, est1, "05 de septiembre de 2019");
+var comprarCurso20 = new CompraCurso(curso1, est1, "06 de septiembre de 2019");
+var comprarCurso21 = new CompraCurso(curso1, est1, "07 de septiembre de 2019");
+var comprarCurso22 = new CompraCurso(curso1, est1, "08 de septiembre de 2019");
+var comprarCurso23 = new CompraCurso(curso1, est1, "09 de septiembre de 2019");
+var comprarCurso24 = new CompraCurso(curso1, est1, "11 de septiembre de 2019");
 console.log(comprarCurso13, comprarCurso14, comprarCurso15, comprarCurso16, comprarCurso17, comprarCurso18);
 console.log(comprarCurso19, comprarCurso20, comprarCurso21, comprarCurso22, comprarCurso23, comprarCurso24);
+//Crear 12 instancias  de compraCurso.
+var CompraCurso9 = new CompraCurso(curso4, est1, "11 de septiembre");
+var comp = [CompraCurso9];
+console.log(comprarCurso9);

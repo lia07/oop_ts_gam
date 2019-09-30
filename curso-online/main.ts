@@ -121,12 +121,12 @@ export class Estudiante{
    public getCorreo(): string{
        return this.correo;
    }
-    public setDireccion(direcE: Direccion[]): void{
-    this.direccion = direcE;
+    public setAgregarNuevaDireccion(nuevaDireccion: Direccion): void{
+    this.direccion.push(nuevaDireccion);
    }
-   public getDireccion(): Direccion[]{
-    return this.direccion;
-   }
+//    public getDireccion(): Direccion[]{
+//     return this.direccion;
+//    }
 }
 export class Direccion{
     private ciudad: string;
@@ -157,6 +157,27 @@ export class Direccion{
     return this.calle;
    }
 }
+export class PlataformaEducativa{
+    private nombre: string;
+    private lista: CompraCurso[];
+
+    constructor(nompl: string, list: CompraCurso[]){
+        this.nombre = nompl;
+        this.lista = list;
+   }
+   public setNombre(nompl: string): void{
+    this.nombre = nompl;
+   }
+   public getNombre(): string{
+    return this.nombre;
+   }
+   public setRegistrarVenta(compra1: CompraCurso){
+    this.lista.push(compra1);
+   }
+   public setIngresoPersividos(venta1: CompraCurso){
+    this.lista.push(venta1);
+   }
+}
 /**
  * Prueba
  */
@@ -178,21 +199,28 @@ console.log(est2);
 console.log(est3);
 console.log(est4);
 console.log(est5);
+console.log(est6);
+est1.setAgregarNuevaDireccion(direccion1);
 //Crear 2 instancias de la clase Docente.
 let direccion2: Direccion =new Direccion("LPZ", "NOSE", "16 DE JULIO");
 let dir2: Direccion[] = [direccion2];
 let direccion3: Direccion =new Direccion("CBB", "tunari", "15 DE Junio");
 let dir3: Direccion[] = [direccion3];
+let direccion4: Direccion =new Direccion("SCZ", "3Anillo", "plan 300");
+let dir4: Direccion[] = [direccion4];
+let direccion5: Direccion =new Direccion("LPZ", "Zona  sur", "Villa Fatima");
+let dir5: Direccion[] = [direccion5];
 let prof1: Profesor = new Profesor("Grover","Plaza", "grover@gmail.com", "Ingeniero", dir2);
 let prof2: Profesor = new Profesor("Angel","Antezana", "angel@gmail.com", "Ingeniero", dir3);
 let prof3: Profesor = new Profesor("Ricardo","Valencia", "ricardo@gmail.com", "Ingeniero", dir3);
-let prof4: Profesor = new Profesor("Franz","Lopez", "franz@gmail.com", "Ingeniero", dir3);
-let prof5: Profesor = new Profesor("Angel2","Antezana2", "angel2@gmail.com", "Ingeniero", dir3);
+let prof4: Profesor = new Profesor("Franz","Lopez", "franz@gmail.com", "Ingeniero", dir5);
+let prof5: Profesor = new Profesor("Angel2","Antezana2", "angel2@gmail.com", "Ingeniero", dir4);
 console.log(prof1);
 console.log(prof2);
 console.log(prof3);
 console.log(prof4);
 console.log(prof5);
+    // prof1.s(dir3);
 
 //Crear 5 instancias de la clase curso.
 let curso1: Curso= new Curso("javaScript","fundamentos de js", 200, prof2);
@@ -227,14 +255,19 @@ console.log(comprarCurso12);
 let comprarCurso13: CompraCurso = new CompraCurso(curso1,est1,"28 de septiembre de 2019");
 let comprarCurso14: CompraCurso = new CompraCurso(curso1,est2,"29 de octubre de 2019");
 let comprarCurso15: CompraCurso = new CompraCurso(curso1,est3,"30 de noviembre de 2019");
-let comprarCurso16: CompraCurso = new CompraCurso(curso1,est4,"31 de diciembre de 2019");
-let comprarCurso17: CompraCurso = new CompraCurso(curso1,est1,"32 de septiembre de 2019");
-let comprarCurso18: CompraCurso = new CompraCurso(curso1,est1,"33 de septiembre de 2019");
-let comprarCurso19: CompraCurso = new CompraCurso(curso1,est1,"34 de septiembre de 2019");
-let comprarCurso20: CompraCurso = new CompraCurso(curso1,est1,"35 de septiembre de 2019");
-let comprarCurso21: CompraCurso = new CompraCurso(curso1,est1,"36 de septiembre de 2019");
-let comprarCurso22: CompraCurso = new CompraCurso(curso1,est1,"37 de septiembre de 2019");
-let comprarCurso23: CompraCurso = new CompraCurso(curso1,est1,"38 de septiembre de 2019");
-let comprarCurso24: CompraCurso = new CompraCurso(curso1,est1,"39 de septiembre de 2019");
+let comprarCurso16: CompraCurso = new CompraCurso(curso1,est4,"02 de diciembre de 2019");
+let comprarCurso17: CompraCurso = new CompraCurso(curso1,est1,"03 de septiembre de 2019");
+let comprarCurso18: CompraCurso = new CompraCurso(curso1,est1,"04 de septiembre de 2019");
+let comprarCurso19: CompraCurso = new CompraCurso(curso1,est1,"05 de septiembre de 2019");
+let comprarCurso20: CompraCurso = new CompraCurso(curso1,est1,"06 de septiembre de 2019");
+let comprarCurso21: CompraCurso = new CompraCurso(curso1,est1,"07 de septiembre de 2019");
+let comprarCurso22: CompraCurso = new CompraCurso(curso1,est1,"08 de septiembre de 2019");
+let comprarCurso23: CompraCurso = new CompraCurso(curso1,est1,"09 de septiembre de 2019");
+let comprarCurso24: CompraCurso = new CompraCurso(curso1,est1,"11 de septiembre de 2019");
 console.log(comprarCurso13,comprarCurso14, comprarCurso15,comprarCurso16, comprarCurso17,comprarCurso18);
 console.log(comprarCurso19,comprarCurso20,comprarCurso21, comprarCurso22,comprarCurso23,comprarCurso24);
+
+//Crear 12 instancias  de compraCurso.
+let CompraCurso9: CompraCurso =new CompraCurso(curso4,est1, "11 de septiembre");
+let comp: CompraCurso[] = [CompraCurso9];
+console.log(comprarCurso9);
