@@ -8,48 +8,72 @@
  *  deben guardar en una lista.
  */
 export class Disco{
-    private precio: number; //atributos
+    private nombre: string; //atributos
+    private precio: number;
+    private formato: string;
 
-    constructor(pr: number){
+    constructor(nom: string, pr: number, fr: string ){
+        this.nombre= nom;
         this.precio = pr;
+        this.formato =fr;
    }
 }
 export class Cd extends Disco{
-    private curso: Curso; 
-    constructor(cu: Curso ){
-        this.curso = cu;
+
+    constructor(nom: string, pr: number, fr: string ){
+        super(nom, pr, fr);
    }
 }
 export class Dvd extends Disco{
-    private curso: Curso; //atributos
-    private estudiante: Estudiante;
-    private fecha: string;
 
-    constructor(cu: Curso){
-        this.curso = cu;
-        this.estudiante = est; 
-        this.fecha= fe;
+    constructor(nom: string, pr: number, fr: string){
+        super(nom, pr, fr);
    }
 }
-export class Blu.ray extends Disco{
-    private curso: Curso; //atributos
-    private estudiante: Estudiante;
-    private fecha: string;
+export class Bluray extends Disco{
 
-    constructor(cu: Curso, est: Estudiante, fe: string){
-        this.curso = cu;
-        this.estudiante = est; 
-        this.fecha= fe;
+    constructor(nom: string, pr: number, fr: string){
+        super(nom, pr, fr);
    }
 }
+/*************/
 export class Cliente{
-    private curso: Curso; //atributos
-    private estudiante: Estudiante;
-    private fecha: string;
+    private nombre: string; //atributos
+    private apellido: string;
+    private edad: number;
 
-    constructor(cu: Curso, est: Estudiante, fe: string){
-        this.curso = cu;
-        this.estudiante = est; 
-        this.fecha= fe;
+    constructor(nom: string, ap: string, ed: number){
+        this.nombre = nom;
+        this.apellido = ap; 
+        this.edad = ed;
    }
 }
+
+export class TiendaDisco{
+    private disco: Disco[];//atributos
+   // private cantidad : number;  
+    
+    constructor(dis: Disco[]){
+        this.disco = dis;
+
+   }
+   public setAgregarDisco(disco1: Disco): void{
+    this.disco.push(disco1);
+   }
+}
+export class VentaDisco{
+    private tipo: Disco[]; //atributos
+    private fecha: string;
+    
+    constructor(fe: string){
+        this.fecha =fe;
+   }
+   public setVentaDisco(cantidad: number, dis: Disco){
+    this.disco = ;
+   }
+}
+/**
+ * Prueba
+ */
+let disco1: Disco = new Disco("mipelicula",25, "ext2");
+let dir: Disco[] = [disco1];

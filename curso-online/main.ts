@@ -127,9 +127,6 @@ export class Estudiante{
     public setAgregarNuevaDireccion(nuevaDireccion: Direccion): void{
     this.direccion.push(nuevaDireccion);
    }
-//    public getDireccion(): Direccion[]{
-//     return this.direccion;
-//    }
 }
 export class Direccion{
     private ciudad: string;
@@ -180,12 +177,26 @@ export class PlataformaEducativa{
    public setIngresoPersividos(venta1: CompraCurso){
     this.lista.push(venta1);
    }
+   public registroCursoComprado(){}
+   public TotalIngreso(): number{
+       let acum: number = 0;
+       let compraCursoIndex: CompraCurso;
+       let cursoIndex: Curso;
+       let precioIndex: number;
+       for(let i: number = 0; i<this.registroCursoComprado.length; i++){
+           compraCursoIndex = this.cursoComprado[i];
+           cursoIndex = compraCursoIndex.getCurso();
+           precioIndex = cursoIndex.getPrecio();
+           acum = acum +precioIndex;
+       }
+       return acum;
+   }
 }
 /**
  * Prueba
  */
 //Crear 10instancias  de la clase estudiante
-let direccion1: Direccion =new Direccion("LPZ", "NOSE", "16 DE JULIO");
+let direccion1: Direccion = new Direccion("LPZ", "NOSE", "16 DE JULIO");
 let dir: Direccion[] = [direccion1];
 let est1: Estudiante = new Estudiante("Gladys","Sarzuri", "sarzuri@gmail.com", dir);
 let est2: Estudiante = new Estudiante("Erlinda","Chambi", "erlinda@gmail.com", dir);
