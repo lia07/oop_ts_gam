@@ -55,7 +55,8 @@ var Circulo = /** @class */ (function (_super) {
 }(FiguraGeometrica));
 exports.Circulo = Circulo;
 var Rectangulo = /** @class */ (function () {
-    function Rectangulo(ba, al) {
+    function Rectangulo(nom, ba, al) {
+        this.nombre = nom;
         this.base = ba;
         this.altura = al;
     }
@@ -68,5 +69,8 @@ var figuraGeometrica1 = new Circulo("circulo", 11, 12, 10);
 var resultado = figuraGeometrica1 instanceof Circulo;
 console.log(resultado);
 var figuraGeometrica2 = new Cuadrado("cuadrado", 1, 2, 3, 4);
-var resultado = figuraGeometrica2 instanceof Triangulo;
-console.log(resultado);
+var resultado2 = figuraGeometrica2 instanceof Triangulo;
+console.log(resultado2);
+var figura = new Rectangulo("rectanggulo", 3, 4);
+var resultado3 = figura instanceof FiguraGeometrica;
+console.log(resultado3);

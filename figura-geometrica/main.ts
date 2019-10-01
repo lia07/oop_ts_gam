@@ -39,10 +39,12 @@ export class Circulo extends FiguraGeometrica{
 }
 
 export class Rectangulo{
+    private nombre: string;
     private base: number;
     private altura: number;
 
-    public constructor(ba: number, al: number){
+    public constructor(nom: string, ba: number, al: number){
+        this.nombre=nom;
         this.base = ba;
         this.altura = al;
     } 
@@ -55,5 +57,9 @@ var resultado:boolean = figuraGeometrica1 instanceof Circulo;
 console.log(resultado);
 
 let figuraGeometrica2: FiguraGeometrica= new Cuadrado("cuadrado", 1,2,3,4);
-var resultado:boolean = figuraGeometrica2 instanceof Triangulo;
-console.log(resultado);
+var resultado2:boolean = figuraGeometrica2 instanceof Triangulo;
+console.log(resultado2);
+
+let figura: Rectangulo = new Rectangulo("rectanggulo", 3,4);
+var resultado3:boolean = figura instanceof FiguraGeometrica;
+console.log(resultado3);
