@@ -137,9 +137,9 @@ var TiendaDisco = /** @class */ (function () {
         var suma = 0;
         for (var i = 0; i < this.ventas.length; i++) {
             var prod = this.ventas[i].producto;
-            if (prod instanceof Dvd) {
-                suma += prod.precio;
-            }
+            //if(prod instanceof Dvd){
+            suma += prod.precio;
+            //}
         }
         return suma;
     };

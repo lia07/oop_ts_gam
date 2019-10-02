@@ -130,9 +130,9 @@ export class TiendaDisco{
         let suma = 0;
         for(let i = 0; i<this.ventas.length; i++){
             let prod = this.ventas[i].producto;
-            if(prod instanceof Dvd){
+            //if(prod instanceof Dvd){
                 suma+=prod.precio;
-            }
+            //}
         }
         return suma;
     }
