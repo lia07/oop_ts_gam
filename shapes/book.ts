@@ -3,12 +3,14 @@ export class Book {
     private nombreAutor: string; 
     private nombreTitulo: string; 
     private genero: string;
+    private estado: ;
 
-    constructor(cod: number, nomA: string, nomT: string, g: string){
+    constructor(cod: number, nomA: string, nomT: string, g: string, es: string){
          this.codigo = cod;
          this.nombreAutor = nomA;
          this.nombreTitulo = nomT;
-         this.genero = g; 
+         this.genero = g;
+         this.estado =es; 
     }
     public setCodigo(value: number):void{
         this.codigo = value;
@@ -34,13 +36,19 @@ export class Book {
     public getGenero(): string{
         return  this.genero;
     }
+    public setEstado(estado: string):void{
+        this.estado = estado;
+   }
+   public getEstado(): string{
+       return  this.estado;
+   }
 
 
     public setIngreso(monto: number){
         this.saldo = this.saldo + monto;
         this.movimientos.push(`Ingreso de ${monto} Bs`)
      }
-    public setPrestamo(montoReintegro: number){
+    public setPrestamo(verificar: number){
         this.saldo = this.saldo + montoReintegro;
         this.movimientos.push(`Reintegro de ${montoReintegro} Bs`);
     }

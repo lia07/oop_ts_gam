@@ -9,7 +9,6 @@ export class Operacion{
         this.numeroy = numeroy;
         //this.resultado = res;
    }
-
 }
 export class Suma extends Operacion{
     private suma: number;
