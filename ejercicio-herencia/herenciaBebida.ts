@@ -116,34 +116,29 @@ export class Agua extends Bebida implements BebidaHidratante{
     }
 }
 export class Tienda{
-     venderBebida(bebida: BebidaHidratante): string{
-        return "bebida para todo edad";
+     venderBebida(bebida: Bebida): string{
+        return `bebida para todo edad
+                bebida para niños
+                bebida para adultos`;
     }     
 }
-//  let agua1:Bebida=new Agua();
-//  let redbull1: Bebida=new RedBull();
-//  let energy1:Bebida=new Energy();
+  let agua:Bebida=new Agua("","","");
+  let redbull: Bebida=new RedBull("","","");
+  let energy:Bebida=new Energy("","","");
 
-// let listaBebida: Bebida[]=[];
-// listaBebida.push(agua1);
-// listaBebida.push(redBull1);
-// listaBebida.push(energy1);
-
-//  for(const v of listaBebida){
-//      console.log(v.informacionPrincipal());
-//  }
+ let listaBebida: Bebida[]=[];
+ listaBebida.push(agua);
+//  listaBebida.push(redBull);
+ listaBebida.push(energy);
+  for(const v of listaBebida){
+      console.log(v.decirMarca());
+  }
 
 let bebida1 : Bebida = new Agua("Vital", "blanco","Agua mineral");
 let bebida2 : Bebida = new Energy("Energy", "Anaranjado","Sabor a naranja");
 let bebida3 : Bebida = new RedBull("RedBull", "Negro","600ml");
 
 console.log(bebida1, bebida2, bebida3);
-console.log(bebida1.diseñar());
-console.log(bebida2.diseñar());
-console.log(bebida3.diseñar());
-
-let bebida: Bebida = new Agua("agua", "incolor", "agua vital");
-console.log(bebida);
-// console.log(bebida1.clasificar());
-console.log(bebida2.decirMarca());
-// console.log(bebida3.contarContenido());
+console.log(bebida1.diseñar(), bebida1.decirMarca());
+console.log(bebida2.diseñar(), bebida2.decirMarca());
+console.log(bebida3.diseñar(), bebida3.decirMarca());

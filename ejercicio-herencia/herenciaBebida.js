@@ -112,30 +112,26 @@ var Tienda = /** @class */ (function () {
     function Tienda() {
     }
     Tienda.prototype.venderBebida = function (bebida) {
-        return "bebida para todo edad";
+        return "bebida para todo edad\n                bebida para ni\u00F1os\n                bebida para adultos";
     };
     return Tienda;
 }());
 exports.Tienda = Tienda;
-//  let agua1:Bebida=new Agua();
-//  let redbull1: Bebida=new RedBull();
-//  let energy1:Bebida=new Energy();
-// let listaBebida: Bebida[]=[];
-// listaBebida.push(agua1);
-// listaBebida.push(redBull1);
-// listaBebida.push(energy1);
-//  for(const v of listaBebida){
-//      console.log(v.informacionPrincipal());
-//  }
+var agua = new Agua("", "", "");
+var redbull = new RedBull("", "", "");
+var energy = new Energy("", "", "");
+var listaBebida = [];
+listaBebida.push(agua);
+//  listaBebida.push(redBull);
+listaBebida.push(energy);
+for (var _i = 0, listaBebida_1 = listaBebida; _i < listaBebida_1.length; _i++) {
+    var v = listaBebida_1[_i];
+    console.log(v.decirMarca());
+}
 var bebida1 = new Agua("Vital", "blanco", "Agua mineral");
 var bebida2 = new Energy("Energy", "Anaranjado", "Sabor a naranja");
 var bebida3 = new RedBull("RedBull", "Negro", "600ml");
 console.log(bebida1, bebida2, bebida3);
-console.log(bebida1.diseñar());
-console.log(bebida2.diseñar());
-console.log(bebida3.diseñar());
-var bebida = new Agua("agua", "incolor", "agua vital");
-console.log(bebida);
-// console.log(bebida1.clasificar());
-console.log(bebida2.decirMarca());
-// console.log(bebida3.contarContenido());
+console.log(bebida1.diseñar(), bebida1.decirMarca());
+console.log(bebida2.diseñar(), bebida2.decirMarca());
+console.log(bebida3.diseñar(), bebida3.decirMarca());
