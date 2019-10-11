@@ -148,7 +148,6 @@ tienda1.realizarVenta(venta5);
 // tienda2.realizarVenta(venta2);
 // let tienda3: TiendaDisco = new TiendaDisco("Center");
 // tienda3.realizarVenta(venta3);
-
 let ingresosCds=tienda1.calcularVentaCds();
 console.log("Los ingrsos de la venta de Cds" + ingresosCds + " Bs");
 let ingresosDvds=tienda1.calcularVentaDvds();
