@@ -10,33 +10,32 @@ export  abstract class Fruta{
    }
 
    public abstract diseñar(): string;
-   public abstract decirMarca(): string;
+   public abstract decirPertenencia(): string;
 }
 export interface FrutaDulce{
     clasificar(): string;      
 }
 export interface FrutaNeutra{
-    contarContenido(): string;      
+    diseñar(): string;      
 }
 export interface FrutaAcida{
-    tipificar(): string;      
+    medirTamaño(): string;      
 }
 
-export class RedBull extends Bebida implements BebidaEnergizante, BebidaAlcoholica{
-    private capacidad: string;
+export class Manzana extends Fruta implements FrutaDulce, FrutaAcida{
+    private : string;
 
-    public constructor(nombre: string, color: string, capacidad: string,peso: string){
+    public constructor(nombre: string, color: string, peso: string){
         super(nombre, color, peso);
         this.capacidad=capacidad;
    }
 
    public diseñar(): string {
     return `
-            
+                (
+             ((()))
             (((())))
-            (((())))
-            (((())))
-            (((())))`;
+             ((()))`;
    }
    decirMarca(): string{
     return "Red Bull";
@@ -53,12 +52,12 @@ export class RedBull extends Bebida implements BebidaEnergizante, BebidaAlcoholi
 
 }
     
-export class Energy extends Bebida implements BebidaEnergizante{
+export class Uva extends Fruta implements FrutaDulce, FrutaAcida{
 
-    private sabor: string;
-    public constructor(nombre: string, color: string, sabor: string, peso: string){
+    //private sabor: string;
+    public constructor(nombre: string, color: string, peso: string){
         super(nombre, color, peso);
-        this.sabor=sabor;
+        //this.sabor=sabor;
    }
 
    public diseñar(): string {
@@ -79,7 +78,7 @@ export class Energy extends Bebida implements BebidaEnergizante{
         return "1L, 600ml";
     }
 }
-export class Agua extends Bebida implements BebidaHidratante{
+export class Aguacate extends Fruta implements FrutaNeutra{
     private tipo: string;
 
     public constructor(nombre: string, color: string, tipo: string, peso: string){
@@ -107,11 +106,11 @@ export class Agua extends Bebida implements BebidaHidratante{
     }
 }
 
-let bebida1 : Fruta = new Agua("Vital", "blanco","Agua mineral");
-let bebida2 : Fruta = new Energy("Energy", "Anaranjado","Sabor a naranja");
-let bebida3 : Fruta = new RedBull("RedBull", "Negro","600ml");
+let fruta1 : Fruta = new Manzana("Manzana", "roja","1/2k");
+let fruta2 : Fruta = new Uva("Energy", "Anaranjado","Sabor a naranja");
+let fruta3 : Fruta = new Aguacate("RedBull", "Negro","600ml");
 
-console.log(bebida1, bebida2, bebida3);
-console.log(bebida1.diseñar());
-console.log(bebida2.diseñar());
-console.log(bebida3.diseñar());
+console.log(fruta1,fruta2, fruta3);
+console.log(fruta1.diseñar());
+console.log(fruta2.diseñar());
+console.log(fruta3.diseñar());

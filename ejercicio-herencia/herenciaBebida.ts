@@ -128,8 +128,9 @@ export class Tienda{
 
  let listaBebida: Bebida[]=[];
  listaBebida.push(agua);
-//  listaBebida.push(redBull);
+ listaBebida.push(redBull);
  listaBebida.push(energy);
+ 
   for(const v of listaBebida){
       console.log(v.decirMarca());
   }
