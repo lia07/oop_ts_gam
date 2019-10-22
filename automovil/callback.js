@@ -42,5 +42,5 @@ function saludar(nombre){
     console.log('Hola' + nombre);
 }
 function procesarEntradaUsuario(collback){
-    
+    console.log("Por favor ingresa tu nombre");
 }
