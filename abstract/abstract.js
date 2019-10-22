@@ -54,7 +54,7 @@ exports.Rectangulo = Rectangulo;
 var rectangulo1 = new Rectangulo(2, 2, 4);
 console.log(rectangulo1.getArea());
 var rectangulo2 = new Rectangulo(4, 4, 8);
-console.log("volumende rectangulo es:", rectangulo2.getVolumen());
+console.log("volumen de rectangulo es:", rectangulo2.getVolumen());
 var Triangulo = /** @class */ (function (_super) {
     __extends(Triangulo, _super);
     function Triangulo(ancho1, alto, anchox) {

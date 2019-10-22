@@ -1,6 +1,6 @@
 
 export abstract class FiguraG{
-
+    
     constructor(private ancho1: number, private alto: number){
         
     }
@@ -41,7 +41,7 @@ let rectangulo1: Rectangulo = new Rectangulo(2,2,4);
 console.log(rectangulo1.getArea());
 
 let rectangulo2: Rectangulo = new Rectangulo(4,4,8);
-console.log("volumende rectangulo es:",rectangulo2.getVolumen());
+console.log("volumen de rectangulo es:",rectangulo2.getVolumen());
 
 
 
