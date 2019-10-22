@@ -1,5 +1,5 @@
 export class FiguraGeometrica{
-    private nombre: string;
+    protected nombre: string;
     private posX: number;
     private posY: number;
 
@@ -8,7 +8,18 @@ export class FiguraGeometrica{
         this.posX = posx;
         this.posY = posy;
     }
+    public getPrincipalInf(): string{
+        return `Nombre de la Figura: ${this.nombre}.
+        Posicion en el eje X: ${this.PosX}.
+        Posicion en el eje Y: ${this.PosY}.`;  // "+THIS.NOMBRE+"+"....
+    }
 }
+
+
+
+
+
+
 export class Triangulo extends FiguraGeometrica{
     private base: number;
     private altura: number;
@@ -18,7 +29,29 @@ export class Triangulo extends FiguraGeometrica{
         this.base = ba;
         this.altura = al;
     } 
+    public getPrincipalInf(): string{
+        return `Soy una Figura rebelde:
+        Mi nombre es: ${this.nombre}.
+        Mi Altura es: ${this.altura}.
+        Mi base es : ${this.base}.`;
+    }
 }
+
+export class TrianguloEscaleno extends Triangulo{
+    private frase: string;
+    public constructor(nombre: string, posx: number, posy: number, frase:string){
+        super(nombre, posx, posy);
+        this.frase= frase;
+    }
+    public getPrincipalInf(): string{
+        return `Soy anarquista:
+        My nombre es: No es tu problema.
+        My frase es: ${this.frase}.`;
+    }
+}
+
+
+
 export class Cuadrado extends FiguraGeometrica{
     private base: number;
     private altura: number;
@@ -63,3 +96,15 @@ console.log(resultado2);
 let figura: Rectangulo = new Rectangulo("rectanggulo", 3,4);
 var resultado3:boolean = figura instanceof FiguraGeometrica;
 console.log(resultado3);
+
+
+let figuraGeometrica4: FiguraGeometrica = new Triangulo('Sr Triangulo para ustedes', 2, 5, 100);
+
+let figuraGeometrica5: FiguraGeometrica = new Triangulo('El Exk4l3n0',  -3, -4, 100, 'Yo no fui');
+
+var resultado: boolean = figuraGeometrica4 instanceof FiguraGeometrica;
+
+
+console.log(figuraGeometrica2.getPrincipalInf());
+console.log(figuraGeometrica4.getPrincipalInf());
+console.log(figuraGeometrica5.getPrincipalInf());
