@@ -1,8 +1,15 @@
 export class Animal{
     private familia: string;
-    private nombreCientifico: string;
+    protected nombreCientifico: string;
+    
+    /** 
+     * constructor 
+     */
 
-    public constructor
+    public constructor(familia: string, nombreCientifico: string){
+        this.familia = familia;
+        this.nombreCientifico = nombreCientifico;
+    }
 }
 
 export interface AnimalAcuatico{
@@ -19,7 +26,15 @@ export interface AnimalMamifero{
     gestar(): string;
         
 }
-export class Cocodrilo extends Animal implements AnimalAcuatico, AnimalMamifero{
+export class Tigre extends Animal implements AnimalMamifero{
+    /** 
+    *constructor
+    */
+   public constructor(familia: string, nombreCientifico: string){
+       super(familia, nombreCientifico);
+   }
+}
+export class Cocodrilo extends Animal implements AnimalAcuatico, AnimalOviparo{
 
     /**
      * name
