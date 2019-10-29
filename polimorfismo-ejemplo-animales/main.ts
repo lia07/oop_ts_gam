@@ -114,12 +114,73 @@ export class Medusa extends Animal{
         super(familia, nombreCientifico);
     }
 }
+export class Cangrejo extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
 export class Zariguella extends Animal{
 
     public constructor(familia: string, nombreCientifico: string){
         super(familia, nombreCientifico);
     }
 }
+export class Tortuga extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Aguila extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Saltamonte extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Hormiga extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Python extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Macaco extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Orangutan extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Gorila extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Leon extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+
 export class Camello extends Animal{
 
 
@@ -134,20 +195,21 @@ export class Caballo extends Animal{
     }
 }
 
-let animal1: Animal = new Ballena("Balle Azul",  "Balainedar");
+let animal1: Animal = new Ballena("Ballena Azul", "Balainedar");
 //console.log(animal1.getGestar());
-console.log(animal1.getGestar());
+console.log(animal1.gestar());
 //console.log(animal1 as Ballena);
-console.log(animal1.getNadar());
+// console.log(animal1.nadar());
+console.log(animal1.GetNadar());
 
-console.log(animal1 instanceof AnimalAcuatico);
+// console.log(animal1 instanceof AnimalAcuatico);
 
 //animal1 instanceof AnimalAcuatico
 
-exporta interface Persona{
-    nombre: string;
-    edsd: number;
-}
-let elinda: Persona = {
-    nombre: "Erlinda"
-}
+// exporta interface Persona{
+//     nombre: string;
+//     edsd: number;
+// }
+// let elinda: Persona = {
+//     nombre: "Erlinda"
+// }

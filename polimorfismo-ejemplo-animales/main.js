@@ -126,6 +126,14 @@ var Medusa = /** @class */ (function (_super) {
     return Medusa;
 }(Animal));
 exports.Medusa = Medusa;
+var Cangrejo = /** @class */ (function (_super) {
+    __extends(Cangrejo, _super);
+    function Cangrejo(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Cangrejo;
+}(Animal));
+exports.Cangrejo = Cangrejo;
 var Zariguella = /** @class */ (function (_super) {
     __extends(Zariguella, _super);
     function Zariguella(familia, nombreCientifico) {
@@ -134,6 +142,78 @@ var Zariguella = /** @class */ (function (_super) {
     return Zariguella;
 }(Animal));
 exports.Zariguella = Zariguella;
+var Tortuga = /** @class */ (function (_super) {
+    __extends(Tortuga, _super);
+    function Tortuga(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Tortuga;
+}(Animal));
+exports.Tortuga = Tortuga;
+var Aguila = /** @class */ (function (_super) {
+    __extends(Aguila, _super);
+    function Aguila(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Aguila;
+}(Animal));
+exports.Aguila = Aguila;
+var Saltamonte = /** @class */ (function (_super) {
+    __extends(Saltamonte, _super);
+    function Saltamonte(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Saltamonte;
+}(Animal));
+exports.Saltamonte = Saltamonte;
+var Hormiga = /** @class */ (function (_super) {
+    __extends(Hormiga, _super);
+    function Hormiga(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Hormiga;
+}(Animal));
+exports.Hormiga = Hormiga;
+var Python = /** @class */ (function (_super) {
+    __extends(Python, _super);
+    function Python(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Python;
+}(Animal));
+exports.Python = Python;
+var Macaco = /** @class */ (function (_super) {
+    __extends(Macaco, _super);
+    function Macaco(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Macaco;
+}(Animal));
+exports.Macaco = Macaco;
+var Orangutan = /** @class */ (function (_super) {
+    __extends(Orangutan, _super);
+    function Orangutan(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Orangutan;
+}(Animal));
+exports.Orangutan = Orangutan;
+var Gorila = /** @class */ (function (_super) {
+    __extends(Gorila, _super);
+    function Gorila(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Gorila;
+}(Animal));
+exports.Gorila = Gorila;
+var Leon = /** @class */ (function (_super) {
+    __extends(Leon, _super);
+    function Leon(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Leon;
+}(Animal));
+exports.Leon = Leon;
 var Camello = /** @class */ (function (_super) {
     __extends(Camello, _super);
     function Camello(familia, nombreCientifico) {
@@ -150,14 +230,17 @@ var Caballo = /** @class */ (function (_super) {
     return Caballo;
 }(Animal));
 exports.Caballo = Caballo;
-var animal1 = new Ballena("Balle Azul", "Balainedar");
+var animal1 = new Ballena("Ballena Azul", "Balainedar");
 //console.log(animal1.getGestar());
-console.log(animal1.getGestar());
+console.log(animal1.gestar());
 //console.log(animal1 as Ballena);
-console.log(animal1.getNadar());
-console.log(animal1 instanceof AnimalAcuatico);
+console.log(animal1.nadar());
+// console.log(animal1 instanceof AnimalAcuatico);
 //animal1 instanceof AnimalAcuatico
-exporta;
-var elinda = {
-    nombre: "Erlinda"
-};
+// exporta interface Persona{
+//     nombre: string;
+//     edsd: number;
+// }
+// let elinda: Persona = {
+//     nombre: "Erlinda"
+// }
