@@ -1,5 +1,5 @@
 export class Animal{
-    private familia: string;
+    protected familia: string;
     protected nombreCientifico: string;
     
     /** 
@@ -33,6 +33,12 @@ export class Tigre extends Animal implements AnimalMamifero{
    public constructor(familia: string, nombreCientifico: string){
        super(familia, nombreCientifico);
    }
+    lactar():string{
+        return "Lacta 10 meses";
+    }
+    gestar():string{
+        return "Gestar 3 meses";
+    }
 }
 export class Cocodrilo extends Animal implements AnimalAcuatico, AnimalOviparo{
 
@@ -197,10 +203,10 @@ export class Caballo extends Animal{
 
 let animal1: Animal = new Ballena("Ballena Azul", "Balainedar");
 //console.log(animal1.getGestar());
-console.log(animal1.gestar());
+console.log(animal1.getGestar());
 //console.log(animal1 as Ballena);
-// console.log(animal1.nadar());
-console.log(animal1.GetNadar());
+console.log(animal1.getLactar());
+console.log(animal1.getNadar());
 
 // console.log(animal1 instanceof AnimalAcuatico);
 

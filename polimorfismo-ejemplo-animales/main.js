@@ -32,6 +32,12 @@ var Tigre = /** @class */ (function (_super) {
     function Tigre(familia, nombreCientifico) {
         return _super.call(this, familia, nombreCientifico) || this;
     }
+    Tigre.prototype.lactar = function () {
+        return "Lacta 10 meses";
+    };
+    Tigre.prototype.gestar = function () {
+        return "Gestar 3 meses";
+    };
     return Tigre;
 }(Animal));
 exports.Tigre = Tigre;
@@ -232,9 +238,10 @@ var Caballo = /** @class */ (function (_super) {
 exports.Caballo = Caballo;
 var animal1 = new Ballena("Ballena Azul", "Balainedar");
 //console.log(animal1.getGestar());
-console.log(animal1.gestar());
+console.log(animal1.getGestar());
 //console.log(animal1 as Ballena);
-console.log(animal1.nadar());
+console.log(animal1.getLactar());
+console.log(animal1.getNadar());
 // console.log(animal1 instanceof AnimalAcuatico);
 //animal1 instanceof AnimalAcuatico
 // exporta interface Persona{
