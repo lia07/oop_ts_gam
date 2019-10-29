@@ -37,46 +37,101 @@ export class Tigre extends Animal implements AnimalMamifero{
 export class Cocodrilo extends Animal implements AnimalAcuatico, AnimalOviparo{
 
     /**
-     * name
+     * constructor
      */
-    public name() {
-        
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+    nadar(): string{
+        return "Nada usando sus 4 patas.";
+    }
+    nacerHuevo(): string{
+        return "Nace en 6 meses";
     }
 
 }
-export class Tigre extends Animal{
+export class Canguro extends Animal{
 
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+
+    }
 }
-export class Ballena extends Animal implements AnimalAcuatico, AnimalMamifero{
 
-    publ
-    nadar(): string{
-        return "Nada usando aletas";
-    }
-    nadar(): string{
-        return "Nada usando aletas";
-    }
+export class Avestruz extends Animal{
 
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+
+    }
 }
 export class Ornitorinco extends Animal implements AnimalOviparo, AnimalMamifero{
 
-    public constructor(familia: string,){
-
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
     }
     nacerHuevo():string{
         return "Nace en 3 meses";
     }
+    lactar():string{
+        return "Lacta 10 meses";
+    }
+    gestar():string{
+        return "Gestar 3 meses";
+    }
+}
+export class Ballena extends Animal implements AnimalAcuatico, AnimalMamifero{
 
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+    nadar(): string{
+        return "Nada usando aletas";
+    }
+    lactar(): string{
+        return "Lacta 1 año.";
+    }
+    gestar():string{
+        return "Gestar 2 años.";
+    }
+}
+export class Murcielago extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
+export class Estrella extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
 }
 
+export class Medusa extends Animal{
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
+}
 export class Zariguella extends Animal{
 
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
 }
 export class Camello extends Animal{
 
+
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
 }
 export class Caballo extends Animal{
 
+    public constructor(familia: string, nombreCientifico: string){
+        super(familia, nombreCientifico);
+    }
 }
 
 let animal1: Animal = new Ballena("Balle Azul",  "Balainedar");

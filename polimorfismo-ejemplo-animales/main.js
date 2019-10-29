@@ -37,71 +37,115 @@ var Tigre = /** @class */ (function (_super) {
 exports.Tigre = Tigre;
 var Cocodrilo = /** @class */ (function (_super) {
     __extends(Cocodrilo, _super);
-    function Cocodrilo() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
     /**
-     * name
+     * constructor
      */
-    Cocodrilo.prototype.name = function () {
+    function Cocodrilo(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    Cocodrilo.prototype.nadar = function () {
+        return "Nada usando sus 4 patas.";
+    };
+    Cocodrilo.prototype.nacerHuevo = function () {
+        return "Nace en 6 meses";
     };
     return Cocodrilo;
 }(Animal));
 exports.Cocodrilo = Cocodrilo;
-var Tigre = /** @class */ (function (_super) {
-    __extends(Tigre, _super);
-    function Tigre() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var Canguro = /** @class */ (function (_super) {
+    __extends(Canguro, _super);
+    function Canguro(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
     }
-    return Tigre;
+    return Canguro;
 }(Animal));
-exports.Tigre = Tigre;
-var Ballena = /** @class */ (function (_super) {
-    __extends(Ballena, _super);
-    function Ballena() {
-        return _super !== null && _super.apply(this, arguments) || this;
+exports.Canguro = Canguro;
+var Avestruz = /** @class */ (function (_super) {
+    __extends(Avestruz, _super);
+    function Avestruz(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
     }
-    Ballena.prototype.nadar = function () {
-        return "Nada usando aletas";
-    };
-    Ballena.prototype.nadar = function () {
-        return "Nada usando aletas";
-    };
-    return Ballena;
+    return Avestruz;
 }(Animal));
-exports.Ballena = Ballena;
+exports.Avestruz = Avestruz;
 var Ornitorinco = /** @class */ (function (_super) {
     __extends(Ornitorinco, _super);
-    function Ornitorinco(familia) {
-        var _this = this;
-        return _this;
+    function Ornitorinco(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
     }
     Ornitorinco.prototype.nacerHuevo = function () {
         return "Nace en 3 meses";
     };
+    Ornitorinco.prototype.lactar = function () {
+        return "Lacta 10 meses";
+    };
+    Ornitorinco.prototype.gestar = function () {
+        return "Gestar 3 meses";
+    };
     return Ornitorinco;
 }(Animal));
 exports.Ornitorinco = Ornitorinco;
+var Ballena = /** @class */ (function (_super) {
+    __extends(Ballena, _super);
+    function Ballena(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    Ballena.prototype.nadar = function () {
+        return "Nada usando aletas";
+    };
+    Ballena.prototype.lactar = function () {
+        return "Lacta 1 año.";
+    };
+    Ballena.prototype.gestar = function () {
+        return "Gestar 2 años.";
+    };
+    return Ballena;
+}(Animal));
+exports.Ballena = Ballena;
+var Murcielago = /** @class */ (function (_super) {
+    __extends(Murcielago, _super);
+    function Murcielago(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Murcielago;
+}(Animal));
+exports.Murcielago = Murcielago;
+var Estrella = /** @class */ (function (_super) {
+    __extends(Estrella, _super);
+    function Estrella(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Estrella;
+}(Animal));
+exports.Estrella = Estrella;
+var Medusa = /** @class */ (function (_super) {
+    __extends(Medusa, _super);
+    function Medusa(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
+    }
+    return Medusa;
+}(Animal));
+exports.Medusa = Medusa;
 var Zariguella = /** @class */ (function (_super) {
     __extends(Zariguella, _super);
-    function Zariguella() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Zariguella(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
     }
     return Zariguella;
 }(Animal));
 exports.Zariguella = Zariguella;
 var Camello = /** @class */ (function (_super) {
     __extends(Camello, _super);
-    function Camello() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Camello(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
     }
     return Camello;
 }(Animal));
 exports.Camello = Camello;
 var Caballo = /** @class */ (function (_super) {
     __extends(Caballo, _super);
-    function Caballo() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Caballo(familia, nombreCientifico) {
+        return _super.call(this, familia, nombreCientifico) || this;
     }
     return Caballo;
 }(Animal));
